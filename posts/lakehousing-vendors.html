@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakehousing vendors got your data, everything else is still your problem — Data is Everything</title>
+<meta name="description" content="My biggest takeaway from the Gartner Data & Analytics Summit: the value chain is moving upstream and the real battle is for the contextual layer.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap navrow">
+    <a class="brand" href="/"><span class="mark"></span> Data is Everything</a>
+    <nav class="main">
+      <a href="/topics/data-stores.html">Data Stores</a>
+      <a href="/topics/data-management.html">Data Management</a>
+      <a href="/topics/data-governance.html">Data Governance</a>
+      <a href="/topics/data-science.html">Data Science</a>
+      <a href="/about.html">About</a>
+      <a class="cta" href="/contact.html">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+  <div class="mobile-nav">
+    <a href="/topics/data-stores.html">Data Stores</a>
+    <a href="/topics/data-management.html">Data Management</a>
+    <a href="/topics/data-governance.html">Data Governance</a>
+    <a href="/topics/data-science.html">Data Science</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+</header>
+
+<article class="article">
+  <div class="art-hero art-lakehouse"><span class="rain"></span></div>
+  <span class="pill">Data Stores · Data Integration</span>
+  <h1>Lakehousing vendors got your data, everything else is still your problem</h1>
+  <div class="byline">By Amin Abou-Gallala <span>·</span> March 16, 2026 <span>·</span> 6 min read</div>
+
+  <p>This was my biggest takeaway from Gartner Data &amp; Analytics Summit, which is one of the most enlightening conferences I've been to in my career.</p>
+
+  <p>What once were purely "lakehouse" platforms are now expanding in every operational direction they can by pivoting to transactional workloads and eyeing MDM acquisitions. It is (very clearly) their anxiety about commoditization and their TAM. Why build an impactful contextual layer when you can repackage a relational database and ship it as a platform feature that drives compute costs? Hey, at least it's serverless 😉</p>
+
+  <p><strong>Medallion architecture or not, the value chain is now moving upstream.</strong></p>
+
+  <p>Data engineering tooling IS quietly consolidating (finally). Standalone tools are being acquired by data platforms (Confluent and StreamSets → IBM) or becoming data platforms themselves (Tobiko and dbt into Fivetran). The solutions are merging because enterprise clients are growing impatient with their "holistic", yet loosely integrated data platform providers, and rightfully so. The impactful solutions will live in the contextual layer, and that requires more depth than the in-built tooling assembled under the lakehouse platform's roadmap pressure expecting to "do it all."</p>
+
+  <p><strong>That contextual layer is taking shape now.</strong></p>
+
+  <p>The vision is agentic pipelines that don't just move or retrieve data, but reason about it. Automating build, test, and observability. Detecting drift, rebuilding and validating without a human in the loop. The data engineer's job is now to orchestrate one layer up. What might this look like? It could still be a drag and drop experience, but for designing and connecting skills and MCPs, not for individual ingestion or transformation nodes. Skills are shifting from plumbing to intent-setting and guardrail design.</p>
+
+  <p>The platforms rushing to claim this layer haven't earned their victory, yet. Take streaming platforms as an example. Snowpipe is automated file loading dressed up as streaming. Spark Structured Streaming is incremental ETL with better marketing. <strong>Real-time</strong>, <strong>stateful</strong>, event-level processing is a different discipline entirely. And not to scare you, but this is just for structured data.</p>
+
+  <p><strong>Unstructured data is where the gap becomes undeniable.</strong></p>
+
+  <p>Underneath all of it, the scope of the enterprise data estate has grown considerably. Invoices, sensor streams, sitting alongside your structured tables. Ingesting, classifying, and tracking lineage across all of it is a different problem than what most platforms were built to solve. I loved Nina Showell's opening for her session that navigating the unstructured metadata management problem is like skiing down a much steeper slope. It's deeper than the traditional data modeling and cataloging concepts, and the saturation in the unstructured ingestion and metadata tooling tells you everything about how much ground is still uncovered.</p>
+
+  <p><strong>Which makes the access conversation for agents even harder.</strong></p>
+
+  <p>Giving agents the connectivity to interrogate your entire data stack (from databases, to pipelines, to business logic) opens a security and governance conversation most enterprises aren't ready for. An agent that understands your business logic and has read access to production systems is powerful. It's also a material risk if the trust boundary isn't defined. That conversation is coming whether organizations plan for it or not.</p>
+
+  <p>Yet through all of this, lakehouse platforms (who are simply fighting over housing your operational and analytical data) have not solved for this — and I honestly don't think they're incentivized to. They've already won their own battle, which is your data 🙂</p>
+
+  <p>So the real question isn't which platform won. They all did, kind of. But the era of centralizing everything into one platform, one engine, one governance model, one vendor's definition of your data, is running out of road. The enterprise data estate is too complex, too distributed, and too consequential for that bet to hold. The future is not a bigger and badder data lakehouse. It's the right agentic tool, with the right context, for the right workload, connected by a contextual layer that actually understands your data across a hybrid estate.</p>
+
+  <p>Welcome back, the fabric!</p>
+
+  <p>And of course, I welcome all your perspectives in the comments.</p>
+
+  <hr>
+  <a class="backlink" href="/">← Back to all posts</a>
+</article>
+
+<footer class="site">
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="/"><span class="mark"></span> Data is Everything</a>
+      <p>Technical sales engineer at IBM writing about governance, integration, and emerging data concepts.</p>
+      <p class="disclaim">The postings on this site are my own and don't necessarily represent IBM's positions, strategies or opinions.</p>
+    </div>
+    <div class="links">
+      <a href="https://linkedin.com/in/amin" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>

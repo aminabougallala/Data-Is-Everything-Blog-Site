@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diving Deep into IBM Next-Generation DataStage — Data is Everything</title>
+<meta name="description" content="High-quality data is the foundation of any AI strategy. A deep look at modern data integration with IBM Next-Generation DataStage.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap navrow">
+    <a class="brand" href="/"><span class="mark"></span> Data is Everything</a>
+    <nav class="main">
+      <a href="/topics/data-stores.html">Data Stores</a>
+      <a href="/topics/data-management.html">Data Management</a>
+      <a href="/topics/data-governance.html">Data Governance</a>
+      <a href="/topics/data-science.html">Data Science</a>
+      <a href="/about.html">About</a>
+      <a class="cta" href="/contact.html">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+  <div class="mobile-nav">
+    <a href="/topics/data-stores.html">Data Stores</a>
+    <a href="/topics/data-management.html">Data Management</a>
+    <a href="/topics/data-governance.html">Data Governance</a>
+    <a href="/topics/data-science.html">Data Science</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+</header>
+
+<article class="article">
+  <div class="art-hero art-datastage"></div>
+  <span class="pill">Data Integration</span>
+  <h1>Diving Deep into IBM Next-Generation DataStage</h1>
+  <div class="byline">By Amin Abou-Gallala <span>·</span> July 2, 2024 <span>·</span> 12 min read</div>
+
+  <p>Why did the chatbot become a bad comedian?</p>
+  <p>Because its data was garbage in, garbage out! (I'm sorry.)</p>
+
+  <p>Jokes aside, nothing is certain in today's world except for death, taxes… and the need for high-quality data! High-quality, curated data is the foundation of a successful AI and analytics strategy. Enterprises that view and consume their curated data as a "product" truly gain a competitive advantage. When this is overlooked, it leads to poor data quality, which can result in inaccurate predictions, flawed insights, and hallucinations in generative AI models, all of which can have significant repercussions for businesses.</p>
+
+  <p>In fact, "Gartner predicts that by 2025, 30% of generative AI enterprise deployments that slow or are abandoned due to costs exceeding value will be as a result of poor data quality." Ensuring that data is clean, consistent, and reliable is essential for maximizing the return on investment in AI. This outcome can be accelerated with an enterprise approach that utilizes a data fabric, democratizing data across the organization to ensure timely and trusted, business-ready data for consumption. One of the key pillars and practices of a successful data fabric is data integration. But what does this really mean?</p>
+
+  <h2>Data Integration: The Backbone of Data Quality</h2>
+  <p>Data integration is a crucial piece of the data fabric, transforming raw data from various sources into a unified, business-ready format. This process ensures data accuracy, timeliness, and ultimately, its value for making informed decisions. However, traditional data integration practices and technologies often face several hurdles:</p>
+  <p><strong>Data Silos and Disparity:</strong> Different departments and applications collect data in various formats and structures, creating inconsistencies that hinder analysis. Isolated data pockets across the organization prevent a holistic view, making it difficult and slow to uncover valuable insights.</p>
+  <p><strong>Code Silos:</strong> Code-driven data integration, while powerful, can be cumbersome and costly. Complex logic is needed to handle diverse data, while hand-written SQL queries are error-prone and require constant maintenance. This approach to data integration pipelines can create a time-consuming development and upkeep burden, especially during the inevitable code migration to a better tool.</p>
+  <p><strong>Scalability and Performance:</strong> Traditional methods through monolithic tools struggle to handle the ever-growing volume and real-time processing needs of modern data, especially when moving data across on-prem and cloud workloads.</p>
+
+  <h2>Modern Data Integration</h2>
+  <p>Modern data integration solutions address these challenges by offering:</p>
+  <p><strong>Power to the developer:</strong> An ML-assisted, no-code user-friendly interface that empowers developers to quickly build and manage integrations without extensive coding. An open ecosystem of pre-built connectors across a variety of data sources and data formats further streamlines this process.</p>
+  <p><strong>Power to the engineer:</strong> Industry-leading data processing performance ensures timely data delivery, while proactive pipeline monitoring identifies and resolves issues before they impact downstream workflows.</p>
+  <p><strong>Power to the enterprise:</strong> The ability to design jobs once and run them in any geography or VPC provides scalability and flexibility for evolving business needs, including the ability to switch the integration pattern of jobs to leverage native ETL engines or push down processes into SQL leveraging ELT.</p>
+  <p><em>Time for my endorsement:</em> IBM InfoSphere DataStage has been an industry leading data integration tool for nearly 2 decades.</p>
+  <p>To meet enterprises where they are today with hybrid-cloud and AI, IBM has introduced Next-Generation DataStage, a modern data integration solution that helps you design, develop and run jobs that move and transform data with industry-leading performance and flexibility.</p>
+  <p>Throughout this blog, let's explore how modern data integration solutions like Next-Generation DataStage can help enterprises unlock the true potential of their data.</p>
+
+  <h2>Power to the developer</h2>
+  <p>The design canvas in Next-Generation DataStage offers a machine learning-assisted, user-friendly interface for designing and managing data pipelines. This no-code/low-code UI allows users to visualize data flows while integrating and connecting to data from 100+ supported data sources and targets from various files and data formats such as Parquet, JSON, Iceberg, XML, and many more!</p>
+
+  <h3>DataOps Tooling</h3>
+  <p>Next-Generation DataStage also offers a suite of DataOps tools to enhance developer productivity. These capabilities include Git integration, which enables developers to easily sync and connect assets/projects, signed Git commands, send commands from the UI and the CLI, unlock version control, and manage branches. Additionally, the DataStage operator framework allows repeatability of installation and upgrades along with unit testing and code quality checks to DataStage. These DataOps tools in a modernized DataStage provide a simplified and enhanced development experience, empowering ETL/ELT teams to innovate at speed and scale.</p>
+
+  <h2>Power to the engineer</h2>
+  <p>It's no secret that proficient data delivery is crucial for organizations to be data driven. If data is not delivered on time, enterprises will struggle with delayed insights, operational inefficiencies, and even lost revenue. This is why data engineers need a robust data integration solution to ensure minimal latency and optimal performance to meet data delivery SLA's.</p>
+  <p>There are two components that play a key role in a robust data integration solution: a performant engine and proactive data observability. The engine that powers your data integration pipelines needs to be powerful and scalable, but more crucially you need to adopt proactive data observability to detect pipeline incidents earlier and resolve pipeline issues faster.</p>
+  <p>Let's dive deeper into how modern data integration solutions, specifically Next Generation DataStage, address both of these with industry-leading parallel processing and native integration with Databand.</p>
+
+  <h3>DataStage Parallelism</h3>
+  <p>For 20+ years, the parallel engine of DataStage stands as the leader in ETL/ELT processing performance (5x faster than Spark…) all while continuously evolving to meet the changing enterprise needs from distributed to CI/CD to cloud-native architectures. Here is what sits behind the covers of the parallel engine:</p>
+  <p><strong>Pipeline parallelism</strong> allows for multiple stages of data processing to occur simultaneously, akin to a conveyor belt system. For instance, while one record is being extracted, the next record begins processing immediately, minimizing idle time and reducing the need for extensive disk usage in the staging area. This method ensures that as one record is processed downstream, another is being extracted and prepared upstream, creating a continuous flow of data processing.</p>
+  <p><strong>Partition parallelism</strong>, on the other hand, divides the data into subsets, or partitions, that are processed independently by different processors. This method utilizes the multiple processors available in systems with SMP or MPP architectures. By distributing the workload across multiple processors, partition parallelism enhances processing efficiency and speed, allowing the same operation to be performed simultaneously on different data partitions.</p>
+
+  <h3>Databand: Enhancing Observability</h3>
+  <p><strong>Databand</strong> provides data observability for Next-Generation DataStage and beyond, offering insights into the health and performance of data pipelines across the enterprise. By monitoring and analyzing metadata from data integration jobs, Databand enables data engineers to detect and resolve issues quickly, ensuring that pipelines run efficiently and produce quality output data. Databand makes this possible with the following benefits:</p>
+  <p><strong>Comprehensive Insights:</strong> Offers detailed insights into the health and performance of data pipelines, ensuring that integration processes are optimized and reliable.</p>
+  <p><strong>Proactive Monitoring:</strong> Databand scans data integration pipelines and reports on collected metadata, providing proactive alerts on potential pipeline breakages before they occur.</p>
+  <p><strong>Enhanced Productivity:</strong> By detecting issues early, Databand helps engineers address problems swiftly, increasing their productivity and reducing downtime.</p>
+  <div class="psa"><strong>PSA for CFO's:</strong> "Investing in data observability as a top priority for enterprise data teams can lead to substantial savings; with just 5 data engineers, it could lead to estimated savings of 3650 hours per year and $789,663 per 3 years."</div>
+
+  <h2>Power to the enterprise</h2>
+  <h3>Design once, run anywhere</h3>
+  <p>As data management trends towards hybrid, multi-cloud environments, data integration tools have evolved to support multiple deployment models. The rise of cloud and AI has made fully managed deployments popular, such as IBM Next-Generation DataStage as a Service. While fully managed deployments reduce the administration and infrastructure expense of self-managed deployments, there are still concerns about data sovereignty, cloud security, and performance.</p>
+  <p>A significant technical development introduced in Next-Generation DataStage is the remote execution engine, which combines the strengths of both fully managed and self-managed models, offering maximum flexibility. Traditionally, ETL/ELT tools combined the design time and runtime components, but the remote execution engine decouples them. This innovation allows the design time of DataStage to be fully managed on cloud, while the runtime (the DataStage parallel engine) can be deployed in any cloud and any geography.</p>
+  <div class="psa"><strong>PSA for CFO's:</strong> "Assuming an enterprise has a multi-cloud deployment and averages just 100 TB of data transfer per month, the resulting ingress/egress charges could be half a million dollars per year… but the remote engine in Next-Gen DataStage helps eliminate this cost entirely."</div>
+  <p>Whether it's Amazon EKS, IBM ROKS, Google GKE, or even in traditional data centers, DataStage meets the enterprise where they are today. The ability for Next-Generation DataStage to run ETL/ELT jobs anywhere reduces data movement, lowers egress costs, minimizes network latency, and boosts pipeline performance while ensuring data security and sovereignty.</p>
+  <p>If you'd like to read more on the remote engine, check out my post: <a href="/posts/remote-execution.html">Remote execution of ETL/ELT pipelines has unlocked new use cases for Data Integration</a>.</p>
+
+  <h3>Flexible, Reusable Integration Patterns</h3>
+  <p>Building on the remote engine, Next-Generation DataStage allows enterprises to design data pipelines once and pick the target data integration pattern without refactoring code or redesigning jobs in the canvas. Simply pick an integration mode (ETL, ELT with SQL pushdown, or TELT) and allow DataStage to compile and run. This streamlined approach eliminates the need for repetitive coding efforts, saving development time and resources.</p>
+  <p>The flexibility to choose your execution pattern at runtime empowers you to optimize data processing for your specific needs. Let's delve into the details of each mode:</p>
+  <p><strong>ETL (Extract, Transform, Load):</strong> This traditional workhorse approach extracts data from source systems, transforms it in a staging area, and then loads the transformed data into the target system. DataStage's parallel engine shines here, optimizing the transformation process for maximum efficiency. This approach is ideal for scenarios requiring complex data transformations before loading into the target system.</p>
+  <p><strong>ELT (Extract, Load, Transform):</strong> This approach prioritizes speed and efficiency by extracting data from source systems and directly loading it into the target system. The transformation then occurs within the target system itself, leveraging the processing power of the target for transformations that can be expressed in SQL. "Say goodbye to hand-coding complex SQL jobs!" DataStage translates your data pipeline design into optimized SQL code that executes directly within the target warehouse. This simplifies development, reduces the risk of errors, and leverages the power of your existing database infrastructure. ELT with SQL pushdown is well-suited for large datasets where minimizing data movement and maximizing utilization of warehouse resources are crucial.</p>
+  <p><strong>TELT (Transform, Extract, Transform, Load):</strong> This approach flips the script on traditional ETL. Data is first transformed within the source system, leveraging its processing capabilities. Then, the transformed data is extracted, potentially transformed again (if needed), and finally loaded into the target system. TELT can be beneficial when the source system has the resources to handle transformations and minimize data transferred for processing.</p>
+  <p>By offering these flexible integration patterns within a single, reusable design, DataStage empowers you to choose the most efficient approach for your specific data pipeline requirements, but does not lock you in to one approach for any job! This translates to faster development, reduced risk of errors, and ultimately, a modern data integration solution for your enterprise.</p>
+
+  <h2>TLDR</h2>
+  <p>Poor data quality can derail even the most ambitious AI initiatives, leading to financial losses and strategic setbacks. Modern data integration solutions like IBM Next-Generation DataStage address these pain points by empowering developers, engineers, and the enterprise with technology that can enhance:</p>
+  <p><strong>Productivity:</strong> ML-assisted, no-code/low-code interface to quickly connect and integrate data from 100+ data sources, targets and formats.</p>
+  <p><strong>Performance:</strong> Industry-leading parallel engine complimented by proactive data pipeline observability and monitoring.</p>
+  <p><strong>Flexibility:</strong> Elect where (co-locate the parallel engine in any VPC) and how (re-usable integration patterns) to run data integration jobs in seconds…</p>
+  <p>By adopting a robust data integration framework, businesses can ensure their data is accurate, timely, and valuable, unlocking the true potential of their AI investments and driving informed decision-making across the organization.</p>
+  <p><strong>Ready to learn more about how DataStage can help your business achieve its data integration goals? <a href="https://dataplatform.cloud.ibm.com/registration/stepone?context=cpdaas&apps=cos%2Cdatastage&regions=us-south%2Ceu-de&S_PKG=ov80049&cm_mmca1=10000665&cm_mmca2=000000TF" target="_blank" rel="noopener">Sign up for the free trial today!</a></strong></p>
+  <p>Don't hesitate to <a href="/contact.html">contact me</a> for any questions about IBM DataStage.</p>
+
+  <hr>
+  <a class="backlink" href="/">← Back to all posts</a>
+</article>
+
+<footer class="site">
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="/"><span class="mark"></span> Data is Everything</a>
+      <p>Technical sales engineer at IBM writing about governance, integration, and emerging data concepts.</p>
+      <p class="disclaim">The postings on this site are my own and don't necessarily represent IBM's positions, strategies or opinions.</p>
+    </div>
+    <div class="links">
+      <a href="https://linkedin.com/in/amin" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remote execution of ETL/ELT pipelines has unlocked new use cases for Data Integration — Data is Everything</title>
+<meta name="description" content="Decoupling design time from runtime changes everything — hybrid cloud, multi-cloud cost savings, and edge processing.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap navrow">
+    <a class="brand" href="/"><span class="mark"></span> Data is Everything</a>
+    <nav class="main">
+      <a href="/topics/data-stores.html">Data Stores</a>
+      <a href="/topics/data-management.html">Data Management</a>
+      <a href="/topics/data-governance.html">Data Governance</a>
+      <a href="/topics/data-science.html">Data Science</a>
+      <a href="/about.html">About</a>
+      <a class="cta" href="/contact.html">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+  <div class="mobile-nav">
+    <a href="/topics/data-stores.html">Data Stores</a>
+    <a href="/topics/data-management.html">Data Management</a>
+    <a href="/topics/data-governance.html">Data Governance</a>
+    <a href="/topics/data-science.html">Data Science</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+</header>
+
+<article class="article">
+  <div class="art-hero art-remote"></div>
+  <span class="pill">Data Governance · Data Integration</span>
+  <h1>Remote execution of ETL/ELT pipelines has unlocked new use cases for Data Integration</h1>
+  <div class="byline">By Amin Abou-Gallala <span>·</span> April 1, 2024 <span>·</span> 8 min read</div>
+
+  <p>Data plays a pivotal role in AI… (My first words for this blog is the most cliche marketing statement of the year… great start Amin.)</p>
+
+  <p>Seriously though, <strong>explainability</strong> of AI models is <em>crucial</em> to operationalizing AI. You can't put AI into production if you can't explain its output. These models are trained on large data sets of various structures (CSV, XML, Hadoop, etc.) to produce performant output, which requires high quality data in a curated catalog. Without a proficient data pipeline strategy to integrate and govern this data, quality and explainability of your models will take a hit.</p>
+
+  <p>That's why data integration for AI, and truly every application, is the secret sauce to success, especially when your data lives in hybrid-cloud, multi-cloud, and/or in multiple formats. With the increasing adoption of cloud and AI, data integration tools have evolved to support fully managed deployments (like DataStage aaS) while integrating data from diverse, disparate sources. But the newest evolution to a <strong>remote execution engine</strong> takes data integration to the next level…</p>
+
+  <p>Typically, ETL/ELT tools have two components: a <strong>design time</strong> (to design data integration jobs) and a <strong>runtime</strong> (to execute data integration jobs). From a deployment perspective, they've always been packaged together… until now. With a <strong>containerized remote runtime</strong>, you can keep the design time <em>fully managed</em>, but deploy the engine (runtime) on any cloud, data center, and geography. This game-changing flexibility keeps data integration jobs closest to the business data and the <em>fully managed</em> design time from touching that data, which improves security and performance while retaining the benefits of a fully managed SaaS model…. it's the best of both worlds!</p>
+
+  <p>Let's visualize this benefit with an incredibly exciting example: <em>laundry</em>. Having to visit a laundromat for doing laundry is time-consuming and inconvenient. You have to wait because there's multiple people (jobs) in queue, plus all the back-and-forth traveling. Deploying a washer/dryer at home allows you to do laundry where your clothes (data) is closest, all while maintaining the same performance of a laundromat.</p>
+
+  <p>The remote engine allows ETL/ELT jobs to be designed once, and run anywhere… Now, let's explore 3 business use cases where this technology can be beneficial.</p>
+
+  <h2>1. Hybrid Cloud Data Integration</h2>
+  <p>Traditional data integration solutions often face latency and scalability challenges when integrating data across hybrid cloud environments. With a remote engine, users can seamlessly orchestrate data pipelines across on-premises and cloud-based data sources while maintaining control over the engine. This enables organizations to leverage the scalability and cost-effectiveness of cloud resources while keeping sensitive data on-premises for compliance or security reasons.</p>
+  <p><strong><em>Use Case Scenario:</em></strong> Consider a financial institution that needs to aggregate customer transaction data from both on-premises databases and cloud-based SaaS applications. With a remote runtime, they can deploy ETL/ELT pipelines within their VPC to process sensitive on-premises data, while still accessing and integrating data from cloud-based sources. This hybrid approach ensures compliance with regulatory requirements while taking advantage of the scalability and agility of cloud resources.</p>
+
+  <h2>2. Multi-Cloud Data Orchestration and Cost Savings</h2>
+  <p>Organizations are increasingly adopting multi-cloud strategies to avoid vendor lock-in and leverage best-of-breed services from different cloud providers. However, orchestrating data pipelines across multiple clouds can be complex and expensive regarding ingress/egress charges (OPEX). Because the remote runtime engine supports any flavor of containers/Kubernetes, it simplifies multi-cloud data orchestration by allowing users to deploy on any cloud platform of their choice and with ideal cost flexibility.</p>
+  <p><strong><em>Use Case Scenario:</em></strong> Suppose a retail company utilizes a combination of AWS for hosting their e-commerce platform and Google Cloud Platform for running AI/ML workloads. With a remote runtime, they can deploy ETL/ELT pipelines on either/both AWS and GCP, enabling seamless data integration and orchestration across multiple clouds. This ensures flexibility and interoperability while leveraging the unique capabilities of each cloud provider.</p>
+
+  <h2>3. Edge Computing Data Processing</h2>
+  <p>Edge computing is becoming increasingly prevalent, especially in industries such as manufacturing, healthcare, and IoT. However, traditional ETL deployments are often centralized, making it challenging to process data at the edge where it's generated. The remote execution concept unlocks the potential for edge data processing by allowing users to deploy lightweight, containerized ETL/ELT engines directly on edge devices or within edge computing environments.</p>
+  <p><strong><em>Use Case Scenario:</em></strong> Imagine a manufacturing company that needs to perform near real-time analysis of sensor data collected from machines on the factory floor. With remote engine, they can deploy runtimes on edge computing devices within the factory premises. This enables them to preprocess and analyze data locally, reducing latency and bandwidth requirements, while still maintaining centralized control and management of data pipelines from the cloud.</p>
+
+  <h2>In closing…</h2>
+  <p>The remote engine helps take an enterprise's data integration strategy to the next level by providing ultimate deployment flexibility, enabling users to execute data pipelines wherever their data resides. With these example use cases, organizations can harness the full potential of their data while reducing risk and lowering costs. Embracing this deployment model empowers developers to design data pipelines once and run anywhere, which will build resilient, agile, and future-proof data architectures that drive business growth.</p>
+  <p>Let me leave you with one more thing…</p>
+  <p><strong>IBM DataStage-aaS Anywhere</strong> is IBM's take on the remote ETL/ELT engine, and it couldn't come at a better time and from a better team. DataStage has been an industry leading data integration tool for nearly 2 decades.</p>
+  <p>If you're interested to learn more, I have another article taking a deep dive into DataStage-aaS Anywhere: <a href="/posts/next-generation-datastage.html">Diving Deep into IBM Next-Generation DataStage</a>.</p>
+
+  <hr>
+  <a class="backlink" href="/">← Back to all posts</a>
+</article>
+
+<footer class="site">
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="/"><span class="mark"></span> Data is Everything</a>
+      <p>Technical sales engineer at IBM writing about governance, integration, and emerging data concepts.</p>
+      <p class="disclaim">The postings on this site are my own and don't necessarily represent IBM's positions, strategies or opinions.</p>
+    </div>
+    <div class="links">
+      <a href="https://linkedin.com/in/amin" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>
