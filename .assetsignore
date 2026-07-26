@@ -1,0 +1,21 @@
+# Files here are NOT uploaded/served as part of the public site.
+# Same syntax as .gitignore.
+
+# Version control (created during Cloudflare's build clone — must not be public)
+.git
+.git/**
+.gitignore
+.assetsignore
+
+# Build tooling / metadata
+.wrangler
+.wrangler/**
+wrangler.jsonc
+wrangler.toml
+node_modules
+
+# Repo docs (not part of the site)
+*.md
+
+# Stray placeholder files
+**/test.txt
