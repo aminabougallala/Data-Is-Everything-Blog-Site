@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dataiseverything.blog/sitemap.xml

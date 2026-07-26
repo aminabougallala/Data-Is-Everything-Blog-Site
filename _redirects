@@ -1,0 +1,10 @@
+# Old WordPress permalinks -> new pages (301 permanent)
+/2026/03/16/lakehousing-vendors-got-your-data-everything-else-is-still-your-problem/  /posts/lakehousing-vendors.html  301
+/2024/07/02/diving-deep-into-ibm-next-generation-datastage/  /posts/next-generation-datastage.html  301
+/2024/04/01/remote-execution/  /posts/remote-execution.html  301
+/data-stores/       /topics/data-stores.html       301
+/data-management/   /topics/data-management.html   301
+/data-governance/   /topics/data-governance.html   301
+/data-science-and-ai/  /topics/data-science.html   301
+/about/    /about.html    301
+/contact/  /contact.html  301
